@@ -27,15 +27,15 @@ inline double degree2radian (const double degree) {
     return degree * pi / 180.0;
 }
 
-inline double random_double() {
-    // [0, 1)
-    return rand() / (RAND_MAX +1.0);
-}
+// inline double random_double() {
+//     // [0, 1)
+//     return rand() / (RAND_MAX +1.0);
+// }
 
-inline double random_double(double min, double max) {
-    // [min, max)
-    return (max - min) * random_double();
-}
+// inline double random_double(double min, double max) {
+//     // [min, max)
+//     return (max - min) * random_double();
+// }
 
 inline double clamp(double x, double min, double max) {
     if (x < min)
