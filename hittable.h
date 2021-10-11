@@ -2,11 +2,21 @@
 #define HITTABLE_H
 
 #include "ray.h"
+#include "common_header.h"
+// #include "material.h"
+
+class material;
+
+/*
+I can't understand, why I declare 'material' here is legal?
+material is defined in material.h, while it's not included. Fuck C++
+*/
 
 struct hit_record
 {
     point3 p;
     vec3 normal;
+    shared_ptr<material> mat_ptr;
     double t;
     bool front_face;
 
