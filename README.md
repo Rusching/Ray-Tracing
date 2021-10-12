@@ -2,7 +2,7 @@
 
 ## Sample
 
-![render](D:/markdown/picture/render.bmp)
+![render](../output_images/render.bmp)
 
 ## Run
 
