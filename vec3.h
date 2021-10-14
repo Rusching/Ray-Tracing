@@ -67,6 +67,7 @@ public:
     2ed, the method 'random_double()' is defined in the file 'common_header.h', but common_header
     includes this file. Can it use the methods in its parent?
     */
+   
     inline static vec3 random() {
         return vec3(random_double(), random_double(), random_double());
     }
