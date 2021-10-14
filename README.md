@@ -2,7 +2,7 @@
 
 ## Sample
 
-![render](../output_images/render.bmp)
+![render](./output_images/render.bmp)
 
 ## Run
 
