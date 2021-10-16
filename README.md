@@ -4,7 +4,7 @@ Offline ray tracing render
 
 ![render](./output_images/render.bmp)
 Uploaded cube:
-![cube9](./output_images/cube9/png)
+![cube9](./output_images/cube9.png)
 ## Run
 
 Build:
