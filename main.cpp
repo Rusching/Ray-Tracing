@@ -120,7 +120,7 @@ hittable_list cube_test() {
     world.add(make_shared<sphere>(point3(0, -1000, 0), 1000, ground_material));
 
     auto material = make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
-    world.add(make_shared<cube>(point3(0, 1, 0), 0.5, material));
+    world.add(make_shared<cube>(point3(0, 0.5, 0), 0.5, material));
     return world;
 }
 
@@ -129,7 +129,7 @@ int main()
 
     // Image
     const auto aspect_ratio = 3.0 / 2.0;
-    const int image_width = 900;
+    const int image_width = 150;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
     const int samples_per_pixel = 500;
     const int max_depth = 50;

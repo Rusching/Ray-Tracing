@@ -35,9 +35,9 @@ public:
         }
     }
     
-    double other2axis(double x, int position, double *value1, double *value2) const
+    double other2axis(double h, int position, double *value1, double *value2) const
     {
-        double t = (x - orig.e[position]) / dir.e[position];
+        double t = (h - orig.e[position]) / dir.e[position];
         point3 intersection = at(t);
         switch(position) {
             case 0: {
