@@ -86,8 +86,8 @@ hittable_list random_scene() {
 hittable_list cube_test() {
     hittable_list world;
 
-    for (int a = -3; a< 3; a++) {
-        for (int b = -3; b < 3; b++) {
+    for (int a = -2; a< 2; a++) {
+        for (int b = -1; b < 1; b++) {
             auto choose_mat = random_double();
             point3 center(a + 0.9 * random_double(), 0.2, b + 0.9 * random_double());
 
@@ -119,7 +119,7 @@ hittable_list cube_test() {
     auto ground_material = make_shared<lambertian>(color(0.5, 0.5, 0.5));
     world.add(make_shared<sphere>(point3(0, -1000, 0), 1000, ground_material));
 
-    auto material = make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
+    auto material = make_shared<lambertian>(color(0.4, 0.2, 0.1));
     world.add(make_shared<cube>(point3(0, 0.5, 0), 0.5, material));
     return world;
 }
