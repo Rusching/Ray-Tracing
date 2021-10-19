@@ -33,19 +33,19 @@ void cube::calculate_intersection(vector<struct intersection> &intersection_list
         double possible_t1 = r.other2axis(center[axis] + half_side_length, axis, &value1, &value2);
         double possible_t2 = r.other2axis(center[axis] - half_side_length, axis, &value3, &value4);
         /*
-            corresponding relations between order of axis and order of plains:
-            because axis range: 0(x), 1(y), 2(z)
-            plain range: 0(x+), 1(x-), 2(y+), 3(y-), 4(z+), 5(z-)
-            so the relation is 2n for +, 2n+1 for -:
-            0 -> 0, 1
-            1 -> 2, 3
-            2 -> 4, 5
+        corresponding relations between order of axis and order of plains:
+        because axis range: 0(x), 1(y), 2(z)
+        plain range: 0(x+), 1(x-), 2(y+), 3(y-), 4(z+), 5(z-)
+        so the relation is 2n for +, 2n+1 for -:
+        0 -> 0, 1
+        1 -> 2, 3
+        2 -> 4, 5
         */
         
         /*
-            because other2axis only returns two non-order values but i 
-            need to process different situations according to the axis so i 
-            add a switch statement
+        because other2axis only returns two non-order values but i 
+        need to process different situations according to the axis so i 
+        add a switch statement
         */
         switch (axis) {
             case 0:{
